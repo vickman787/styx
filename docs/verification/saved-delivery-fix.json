@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-11-06T08:14:01.801183+00:00",
+  "problem": "Saved invoice detail crashed when processing transition timestamps were absent.",
+  "fix": "Missing historical timing is explicitly unavailable; complete timing retains measured duration.",
+  "verification": {
+    "productionBuild": true,
+    "browserRegressionsPassed": 2,
+    "cases": [
+      "missing historical timing and reload",
+      "complete timing and reload"
+    ],
+    "publicRouteServesUpdatedBundle": true,
+    "anonymousPrivateApiStatus": 401
+  },
+  "deployment": {
+    "image": "styx:job-detail-20261106",
+    "frontendOnly": true,
+    "databaseMigration": false
+  },
+  "limitation": "Authenticated live-owner browser rendering was not inspected; regression used the confirmed saved-job structure in an isolated local workspace."
+}

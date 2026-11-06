@@ -2,7 +2,7 @@
   "checkedAt": "2026-11-06T07:18:23.2155793Z",
   "origin": "https://usestyx.xyz",
   "runtime": "Ubuntu ARM64 Docker",
-  "image": "styx:89e27a14",
+  "image": "styx:job-detail-20261106",
   "databaseMigration": {
     "passed": true,
     "tables": 20,

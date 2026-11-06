@@ -2011,6 +2011,15 @@ function Detail() {
   const { job: j, act, data } = useJob();
   const nav = useNavigate();
   if (!j) return <Missing />;
+  const deliveredAt = j.transitions.findLast((t) => t.state === "delivered")?.at;
+  const startedAt = j.transitions.findLast(
+    (t) => t.state === "running" && deliveredAt !== undefined && t.at <= deliveredAt,
+  )?.at;
+  const processingSeconds =
+    deliveredAt !== undefined && startedAt !== undefined &&
+    Number.isFinite(deliveredAt) && Number.isFinite(startedAt)
+      ? ((deliveredAt - startedAt) / 1000).toFixed(2)
+      : null;
   return (
     <>
       <JobHead job={j} title={j.name} />
@@ -2054,15 +2063,9 @@ function Detail() {
                   <strong>october-invoices.csv</strong>
                   <small>{j.artifact.rows.length} records · CSV delivery</small>
                   <small>
-                    Processing duration:{" "}
-                    {(
-                      (j.transitions.findLast((t) => t.state === "delivered")!
-                        .at -
-                        j.transitions.findLast((t) => t.state === "running")!
-                          .at) /
-                      1000
-                    ).toFixed(2)}
-                    s measured
+                    Processing duration: {processingSeconds === null
+                      ? "Not recorded for this saved delivery"
+                      : `${processingSeconds}s measured`}
                   </small>
                 </div>
                 <span className="subtle-tag">CSV</span>
