@@ -1,0 +1,9 @@
+{
+  "invoice_id": "MANUAL-001",
+  "vendor": "Manual test invoice",
+  "date": "2026-10-28",
+  "currency": "USD",
+  "subtotal": "10.00",
+  "tax": "1.00",
+  "total": "11.00"
+}

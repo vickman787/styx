@@ -1,0 +1,97 @@
+{
+  "network": "testnet",
+  "codeHash": "Fvxj2r1j4k9fJXpPzVDGUoeRQ8SNZWHfsfbJ1Dsf6fZW",
+  "deployed": true,
+  "accounts": {
+    "contract": {
+      "accountId": "styx-contract-bf76f42ba5.testnet",
+      "created": true
+    },
+    "agent": {
+      "accountId": "styx-agent-bf76f42ba5.testnet",
+      "created": true
+    },
+    "verifier": {
+      "accountId": "styx-verifier-bf76f42ba5.testnet",
+      "created": true
+    },
+    "provider": {
+      "accountId": "styx-provider-bf76f42ba5.testnet",
+      "created": true
+    },
+    "parselab": {
+      "accountId": "styx-parselab-bf76f42ba5.testnet",
+      "created": true
+    }
+  },
+  "transactions": [
+    {
+      "action": "deploy-and-initialize",
+      "hash": "HsXKbH8w1VPE5xhdQdEwdCKkFXtjJsivaVhT3yunc3sz"
+    },
+    {
+      "action": "restrict-agent",
+      "hash": "4uQVpAFpjKemv3q8sSbontgPpYpHMDeUZHwUJ6fBvMci"
+    },
+    {
+      "action": "restrict-verifier",
+      "hash": "C32FERSfpMGC9VqtJfPRrnKWKaXMWZ4gYU91pFS15aJ7"
+    },
+    {
+      "action": "restrict-provider",
+      "hash": "6sB5yRwKp6Lkk5F4wExrW9TYq8LHPuqLBeEDa362CyCk"
+    },
+    {
+      "action": "restrict-parselab",
+      "hash": "AhJNppTfKH5qBg7agJ8XjPw1mHwLnGJcjLfgzgakVzBC"
+    }
+  ],
+  "verifiedScopes": {
+    "agent": {
+      "accountId": "styx-agent-bf76f42ba5.testnet",
+      "publicKey": "ed25519:E8HSzmbYGR32eqVxqy55KMF83YUYzgDVLEaroN2eJcic",
+      "permission": {
+        "allowance": "250000000000000000000000",
+        "method_names": [
+          "reserve"
+        ],
+        "receiver_id": "styx-contract-bf76f42ba5.testnet"
+      }
+    },
+    "verifier": {
+      "accountId": "styx-verifier-bf76f42ba5.testnet",
+      "publicKey": "ed25519:7zbsXAneHFcSDSmQzFhMaQ6rLiohTWNnaaP6teTNd68M",
+      "permission": {
+        "allowance": "250000000000000000000000",
+        "method_names": [
+          "attest"
+        ],
+        "receiver_id": "styx-contract-bf76f42ba5.testnet"
+      }
+    },
+    "provider": {
+      "accountId": "styx-provider-bf76f42ba5.testnet",
+      "publicKey": "ed25519:H6FeHux6hVFwKacKJ3L8Ksvp6R2tEhGt451RrZNZT5xg",
+      "permission": {
+        "allowance": "250000000000000000000000",
+        "method_names": [
+          "deliver"
+        ],
+        "receiver_id": "styx-contract-bf76f42ba5.testnet"
+      }
+    },
+    "parselab": {
+      "accountId": "styx-parselab-bf76f42ba5.testnet",
+      "publicKey": "ed25519:7NSYN4Sybw6C7bnzpFqZBmiw9YXTikhc6KQq9XdSsrNy",
+      "permission": {
+        "allowance": "250000000000000000000000",
+        "method_names": [
+          "deliver"
+        ],
+        "receiver_id": "styx-contract-bf76f42ba5.testnet"
+      }
+    }
+  },
+  "storageLayout": "keyed/v3",
+  "checkedAt": "2026-11-03T07:07:36.557Z"
+}

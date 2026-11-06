@@ -1,0 +1,128 @@
+.review-page {
+  min-width: 0;
+}
+.review-page .notice {
+  display: block;
+}
+.review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.review-page code {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  font-size: 11px;
+}
+.review-integrity {
+  margin: 20px 0;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+}
+.review-integrity summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.review-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 0.65fr);
+  gap: 18px;
+}
+.review-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding-left: 12px;
+  background: var(--surface);
+}
+.review-search input {
+  border: 0;
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+}
+.review-table {
+  width: 100%;
+  min-width: 650px;
+}
+.review-table td,
+.review-table th {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  max-width: 280px;
+}
+.review-table small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 4px 0;
+}
+.review-table strong {
+  font-weight: 550;
+}
+.review-flag {
+  display: block;
+  color: #825511;
+  font-size: 11px;
+  margin: 4px 0;
+}
+.review-selected {
+  background: #edf6e8;
+}
+.review-pagination {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 18px;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.review-comparison {
+  margin-top: 24px;
+  scroll-margin-top: 90px;
+}
+.review-comparison .review-table {
+  min-width: 540px;
+}
+.review-source {
+  margin-top: 22px;
+  min-width: 0;
+}
+.review-source pre {
+  background: #f2f4ed;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 380px;
+  overflow: auto;
+  padding: 18px;
+  font-size: 12px;
+  line-height: 1.7;
+  border: 1px solid var(--border);
+}
+@media (max-width: 700px) {
+  .review-filters {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .review-page .button {
+    min-height: 44px;
+    font-size: 12px;
+  }
+  .review-page .page-heading {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .review-page .panel-title {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .review-pagination .button {
+    min-height: 44px;
+  }
+  .review-integrity .definition > div {
+    grid-template-columns: minmax(0, 0.6fr) minmax(0, 1fr);
+  }
+}

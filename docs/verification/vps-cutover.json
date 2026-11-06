@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-11-06T07:18:23.2155793Z",
+  "origin": "https://usestyx.xyz",
+  "runtime": "Ubuntu ARM64 Docker",
+  "image": "styx:89e27a14",
+  "databaseMigration": {
+    "passed": true,
+    "tables": 20,
+    "oldSessionsCleared": true,
+    "ownerProvisioned": true,
+    "paidAndRefundedPreserved": true
+  },
+  "backendReady": true,
+  "anonymousPrivateApiStatus": 401,
+  "proxy": {
+    "validated": true,
+    "reloaded": true,
+    "janusRoutePreserved": true,
+    "backupStamp": "20261106-065541"
+  },
+  "dns": {
+    "authoritativeA": "130.162.238.221",
+    "registryDelegationPending": false
+  },
+  "publicHttpsVerified": true,
+  "janusPublicStatus": 200,
+  "localServerPaused": true,
+  "demoVideo": "public HTTPS verified; recording pending"
+}

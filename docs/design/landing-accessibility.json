@@ -1,0 +1,50 @@
+[
+  {
+    "width": 1440,
+    "state": "mandate",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "state": "delivery",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "state": "acceptance",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "state": "receipt",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "width": 390,
+    "state": "mandate",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "width": 390,
+    "state": "delivery",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "width": 390,
+    "state": "acceptance",
+    "overflow": false,
+    "violations": []
+  },
+  {
+    "width": 390,
+    "state": "receipt",
+    "overflow": false,
+    "violations": []
+  }
+]

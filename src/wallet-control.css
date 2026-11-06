@@ -1,0 +1,54 @@
+.wallet-control {
+  position: relative;
+  min-width: 0;
+}
+.header-wallet {
+  min-height: 44px;
+  max-width: 250px;
+  gap: 8px;
+}
+.header-wallet > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header-wallet > svg {
+  flex-shrink: 0;
+}
+.wallet-popover {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  width: min(340px, calc(100vw - 24px));
+  padding: 20px;
+  background: var(--surface, #fff);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 12px 36px #0002;
+  z-index: 80;
+}
+.wallet-popover p {
+  line-height: 1.6;
+  font-size: 13px;
+}
+.wallet-popover .wallet-account {
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+.wallet-popover .button {
+  margin-top: 16px;
+}
+.wallet-popover .text-link {
+  display: block;
+}
+@media (max-width: 600px) {
+  .header-wallet {
+    max-width: 180px;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .toolbar-right > .mode {
+    display: none;
+  }
+}

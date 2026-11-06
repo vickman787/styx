@@ -1,0 +1,31 @@
+name: styx
+services:
+  app:
+    image: styx:prepared
+    restart: unless-stopped
+    init: true
+    env_file:
+      - /opt/styx/private/runtime.env
+    volumes:
+      - /opt/styx/data:/var/lib/styx
+    ports:
+      - "127.0.0.1:4173:4173"
+    networks:
+      private:
+        aliases:
+          - styx-app
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+networks:
+  private:
+    name: styx_private

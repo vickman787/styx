@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "codeHash": "CdBNyKSJ5vEj5k85MSLzpfpUhxBx7NZGNzG1yjvSwck1",
+  "checkedAt": "2026-10-27T14:11:55.670Z",
+  "runtime": {
+    "build": "8bdca22",
+    "commit": "8bdca22ff9d568eac29bf6c3da031f33eefecece",
+    "rustc_version": "1.95.0",
+    "version": "trunk"
+  },
+  "checks": [
+    "compiled WASM deployment, initialization and code hash",
+    "real attached deposit separated from storage credit",
+    "unauthorized approval rolls back state",
+    "storage-credit panic rolls back an already-written approval",
+    "private callback rejects external signer",
+    "real VM transfer and 15 Tgas callback mark Paid and release reservation",
+    "second payout rejected",
+    "withdrawal transfer/callback completes",
+    "failed transfer callback preserves reservation, clears attestation and permits refund"
+  ],
+  "receipts": [
+    {
+      "action": "fund",
+      "hash": "CRoBcUWbSdDPKj2VxmBrrxgmXwqpZMBHquLvjWVpF1Bf",
+      "gas": "2103948505163"
+    },
+    {
+      "action": "approve",
+      "hash": "6Zk3WysECZc3wd4psjGjVKG3qdtYUC78NFXoapqYES7q",
+      "gas": "1952964586288"
+    },
+    {
+      "action": "approve",
+      "hash": "FCfENGAZY2UXRNW6CMZXWkqHG2ca8bGEbCeKUBU9thpQ",
+      "gas": "2084900262400"
+    },
+    {
+      "action": "approve",
+      "hash": "FUSbHxnZ8JEvFAGWV5CfPfdGMUXVm25cc9koLiBgCeYJ",
+      "gas": "2420609621965"
+    },
+    {
+      "action": "reserve",
+      "hash": "CZ1nKBwKWdv3X474YVzeggVGZWNKDNQqggghps9PyRdi",
+      "gas": "2387541054014"
+    },
+    {
+      "action": "release",
+      "hash": "AdVsdJxnyPpZL9NQm8TXFpHfKxHfC3qQKP9WZmJqpkJx",
+      "gas": "1849721468106"
+    },
+    {
+      "action": "deliver",
+      "hash": "PZN3hhRz8rc23JzNWFPijQU8S5mAcsVSuWGLba76NQw",
+      "gas": "2360505507366"
+    },
+    {
+      "action": "attest",
+      "hash": "6ZJrXn4hDX71JCPTwaBB8beByrsDqLsFyW56q4bwV715",
+      "gas": "2487304031224"
+    },
+    {
+      "action": "on_transfer",
+      "hash": "3g5rvXvkMfCtpf6cih1xSXzHyCPZuhtVE7HcWbjXxWBf",
+      "gas": "1671409797341"
+    },
+    {
+      "action": "release",
+      "hash": "CaYSaNUMUxvEWmYo1pRh3AK6TxihyzByRFnw1YJQSGqG",
+      "gas": "6064229137486"
+    },
+    {
+      "action": "release",
+      "hash": "2TtVMBzqsneeuo1ykduLbqucMjQ5KT3H2faakhnEGKyU",
+      "gas": "1862596944474"
+    },
+    {
+      "action": "withdraw",
+      "hash": "DzpzKh36wgZdm3UBzsZRq4m1b3hECYLbQ3CvRjYXjsv5",
+      "gas": "5700369016554"
+    },
+    {
+      "action": "approve",
+      "hash": "8YW3jC6BzHYgCdyPy89Af9v8cz8veYx13XNSrxRGgRwk",
+      "gas": "2780688302766"
+    },
+    {
+      "action": "reserve",
+      "hash": "Cjqmd49XL9xkHwu8MSw5bRHPMgPD2xqBPHYe4y4LT2qd",
+      "gas": "2760993446131"
+    },
+    {
+      "action": "deliver",
+      "hash": "HSgyZS8LuyvypgdSjbnbHYh7j29G4ykrTDMxeNRyYvhP",
+      "gas": "2732977821373"
+    },
+    {
+      "action": "attest",
+      "hash": "5KQU1zu32Pd3xbnSoZisKqexfqiqU67mEwNP8v5jcvGT",
+      "gas": "2858649821871"
+    },
+    {
+      "action": "release",
+      "hash": "FCEyqQJhsLWrt2Y9jSfPEwbepvD7GWoUdD7x2AN3zjeQ",
+      "gas": "6967545817586"
+    },
+    {
+      "action": "refund",
+      "hash": "7MqBwjzNovzZz31DCc9GNgKiRgdeyqvm2rXynzTuPo2R",
+      "gas": "2775842723927"
+    }
+  ],
+  "limits": "Small-case VM smoke; no scalability certification or independent audit."
+}

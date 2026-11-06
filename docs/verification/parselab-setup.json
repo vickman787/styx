@@ -1,0 +1,16 @@
+{
+  "network": "testnet",
+  "provider": "parselab",
+  "operator": "STYX",
+  "accountId": "styx-parselab-2ae3a5a7e7.testnet",
+  "publicKey": "ed25519:Lk42MQG4ut32uVrZ3itYzsF8mwX4GtjjAphvCM3wWvJ",
+  "contractId": "styx-contract-1effc31636.testnet",
+  "codeHash": "CdBNyKSJ5vEj5k85MSLzpfpUhxBx7NZGNzG1yjvSwck1",
+  "methodNames": [
+    "deliver"
+  ],
+  "allowance": "250000000000000000000000",
+  "priceNear": "0.012",
+  "restrictedTx": "HF8buvwPhq2qgaKhPF5MbHisCu56beNWPSGvtGu5JNGr",
+  "verifiedAt": "2026-11-02T16:56:48.738Z"
+}

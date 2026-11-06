@@ -1,0 +1,360 @@
+.near-page {
+  min-width: 0;
+}
+.near-provider-quotes {
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.near-provider-quotes legend {
+  padding: 0 5px;
+  font-weight: 600;
+}
+.near-provider-quotes > div {
+  display: grid;
+  gap: 10px;
+}
+.near-provider-quotes label {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.near-provider-quotes label.selected {
+  border-color: #17694e;
+  background: #edf6e8;
+}
+.near-provider-quotes label > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.near-provider-quotes input {
+  width: auto;
+  min-height: auto;
+  accent-color: #17694e;
+}
+.near-provider-quotes small {
+  font-size: 11px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.near-job-progress {
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.near-job-progress ol {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  list-style: none;
+  padding: 0;
+  gap: 12px;
+  margin: 0;
+}
+.near-job-progress li {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.near-job-progress li > span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.near-job-progress li small {
+  display: block;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.near-job-progress li[aria-current] {
+  color: #17694e;
+  font-weight: 600;
+}
+.near-job-progress p {
+  font-size: 13px;
+  margin: 18px 0 0;
+}
+.near-receipt-details {
+  margin-top: 20px;
+}
+.near-receipt-details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.near-receipt-details dd,
+.near-print-receipt dd {
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.near-receipt-details p {
+  font-size: 12px;
+}
+.near-print-receipt {
+  display: none;
+}
+.near-receipt-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 16px 0;
+}
+@media (max-width: 600px) {
+  .near-job-progress ol {
+    grid-template-columns: 1fr;
+  }
+  .near-job-progress li {
+    display: flex;
+    gap: 8px;
+  }
+  .near-job-progress li small {
+    margin: 0 0 0 auto;
+  }
+}
+@media print {
+  body:has(> .near-print-receipt) > :not(.near-print-receipt) {
+    display: none !important;
+  }
+  .near-print-receipt {
+    display: block;
+    color: #171b19;
+    background: white;
+    font-size: 10pt;
+    padding: 12mm;
+  }
+  .near-print-receipt h2 {
+    font-size: 18pt;
+  }
+  .near-print-receipt .definition > div {
+    padding: 5px 0;
+    break-inside: avoid;
+  }
+  .near-print-receipt p {
+    font-size: 9pt;
+  }
+}
+.near-page .empty > p {
+  color: #596750;
+}
+.near-page .near-section {
+  margin-bottom: 22px;
+}
+.near-page .near-top {
+  margin-top: 24px;
+}
+.near-page .near-issues {
+  padding-left: 20px;
+  font-size: 12px;
+  color: #79551f;
+  line-height: 1.9;
+}
+.near-page .near-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.near-page .near-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.near-page .near-buttons .button {
+  min-height: 40px;
+}
+.near-page .near-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.near-page label select {
+  width: 100%;
+  max-width: 100%;
+  font-size: 12px;
+}
+.near-page .near-balances {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.near-page .near-balances > div {
+  padding: 16px;
+  min-width: 0;
+}
+.near-page .near-balances > div:nth-child(2n) {
+  border-left: 1px solid var(--border);
+}
+.near-page .near-balances > div:nth-child(n + 3) {
+  border-top: 1px solid var(--border);
+}
+.near-page .near-balances span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.near-page .near-balances strong {
+  display: block;
+  font-size: 21px;
+  font-weight: 550;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
+}
+.near-page .near-balances small {
+  font-size: 11px;
+  font-weight: 400;
+}
+.near-page .near-rule-details {
+  font-size: 12px;
+  border-block: 1px solid var(--border);
+  padding: 16px 0;
+  margin: 18px 0;
+  color: #526248;
+}
+.near-page pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  font-size: 11px;
+  line-height: 1.7;
+  background: #f3f5ed;
+  border-radius: 4px;
+  padding: 16px;
+  color: #314b37;
+}
+.near-page .near-stage {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 18px 0;
+  color: #41684d;
+}
+.near-page .near-receipt {
+  display: flex;
+  gap: 14px;
+  padding: 22px;
+  margin-top: 24px;
+  border: 1px solid #a1c8aa;
+  background: #edf6e8;
+  border-radius: 4px;
+  color: #28573b;
+}
+.near-page .near-receipt > div {
+  min-width: 0;
+}
+.near-page .near-receipt p {
+  font-size: 12px;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+.near-page .near-receipt code {
+  display: block;
+  margin-top: 12px;
+  word-break: break-all;
+}
+.near-page .near-message {
+  padding: 16px;
+  background: #e4f3e7;
+  border: 1px solid #b1cdb6;
+  font-size: 12px;
+  color: #285d3b;
+}
+.near-page .near-progress {
+  padding: 12px;
+  color: #3d6250;
+  font-size: 12px;
+}
+.near-page .near-request-list > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border);
+  min-width: 0;
+}
+.near-page .near-request-list > div > span:first-child {
+  flex: 1;
+  min-width: 0;
+}
+.near-page .near-request-list strong {
+  font-size: 12px;
+}
+.near-page .near-request-list small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+.near-page .near-request-list code {
+  display: block;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+}
+.near-page .near-request-list .field-error {
+  color: var(--danger);
+}
+.near-page .near-top > div,
+.near-page .near-top > aside {
+  min-width: 0;
+}
+@media (max-width: 700px) {
+  .near-page .near-balances strong {
+    font-size: 17px;
+  }
+  .near-page .near-balances > div {
+    padding: 14px;
+  }
+  .near-page .near-buttons {
+    align-items: stretch;
+  }
+  .near-page .near-buttons .button {
+    min-height: 44px;
+    flex: 1 1 140px;
+    font-size: 12px;
+  }
+  .near-page .near-request-list > div {
+    flex-wrap: wrap;
+  }
+  .near-page .near-request-list > div > span:first-child {
+    flex-basis: 65%;
+  }
+  .near-page .near-receipt {
+    padding: 16px;
+  }
+  .near-page .near-top {
+    margin-top: 18px;
+  }
+  .near-page .near-issues {
+    font-size: 11px;
+  }
+  .near-page .definition > div {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+  .near-page .near-request-list .button {
+    min-height: 40px;
+  }
+}
+.near-sample-toggle {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 10px;
+}
+.near-sample-toggle input[type="checkbox"] {
+  width: 18px;
+  min-height: 18px;
+  flex-shrink: 0;
+  margin: 0;
+}

@@ -1,0 +1,92 @@
+.testing-guide {
+  display: flex;
+  gap: 18px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.testing-guide > svg {
+  flex-shrink: 0;
+  color: var(--success);
+}
+.testing-guide h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.testing-guide p {
+  max-width: 85ch;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.testing-guide .helper {
+  display: block;
+  margin-top: 6px;
+}
+.testing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.testing-case {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 24px;
+}
+.testing-case h2 {
+  font-size: 19px;
+  margin: 16px 0 8px;
+}
+.testing-case p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.testing-case-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.testing-expectation {
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+  padding-top: 16px;
+  flex: 1;
+}
+.testing-expectation h3 {
+  font-size: 13px;
+  margin: 0;
+}
+.testing-case > .button {
+  align-self: flex-start;
+  margin-top: 18px;
+  min-height: 44px;
+}
+.testing-latest {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.testing-latest .text-link {
+  flex-basis: 100%;
+  min-height: 44px;
+}
+@media (max-width: 760px) {
+  .testing-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .testing-guide,
+  .testing-case {
+    padding: 18px;
+  }
+  .testing-guide {
+    gap: 12px;
+  }
+  .testing-case-top {
+    flex-wrap: wrap;
+  }
+}

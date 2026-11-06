@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "endpoint": "https://cloud-api.near.ai/v1/chat/completions",
+  "model": "deepseek/deepseek-v3.2",
+  "checkedAt": "2026-10-27T21:17:14.425Z",
+  "input": "One synthetic invoice; no customer files",
+  "engine": "near_ai",
+  "independentChecks": [
+    {
+      "name": "CSV schema",
+      "pass": true
+    },
+    {
+      "name": "Invoice coverage",
+      "pass": true
+    },
+    {
+      "name": "Arithmetic & source match",
+      "pass": true
+    },
+    {
+      "name": "Duplicate detection",
+      "pass": true
+    },
+    {
+      "name": "Uncertainty flags",
+      "pass": true
+    },
+    {
+      "name": "Artifact & mandate binding",
+      "pass": true
+    }
+  ],
+  "paymentMade": false,
+  "failure": null,
+  "limitation": "One actual extraction check; no model attestation proof or quality certification."
+}

@@ -1,0 +1,9 @@
+{
+  "invoice_id": "INV-1025",
+  "vendor": "",
+  "date": "2026-10-25",
+  "currency": "USD",
+  "subtotal": "125.00",
+  "tax": "10.00",
+  "total": "135.00"
+}

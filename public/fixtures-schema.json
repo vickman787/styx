@@ -1,0 +1,1 @@
+{"invoice_id":"INV-1001","vendor":"Example vendor (empty string when unknown)","date":"2026-10-01","currency":"USD","subtotal":"100.00","tax":"10.00","total":"110.00","notes":"Optional untrusted document text"}

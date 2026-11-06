@@ -1,0 +1,125 @@
+{
+  "checked": [
+    {
+      "width": 1440,
+      "route": "/",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/app",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/jobs/new",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/providers",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/activity",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/settings",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/testnet",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/jobs/STX-1044",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/jobs/STX-1058/security",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/jobs/STX-1057/receipt",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/jobs/STX-1057/quotes",
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "route": "/jobs/STX-1059/mandate",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/app",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/jobs/new",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/providers",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/activity",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/settings",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/testnet",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/jobs/STX-1044",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/jobs/STX-1058/security",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/jobs/STX-1057/receipt",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/jobs/STX-1057/quotes",
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "route": "/jobs/STX-1059/mandate",
+      "violations": 0
+    }
+  ],
+  "findings": []
+}

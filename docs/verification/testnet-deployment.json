@@ -1,0 +1,41 @@
+{
+  "network": "testnet",
+  "codeHash": "CdBNyKSJ5vEj5k85MSLzpfpUhxBx7NZGNzG1yjvSwck1",
+  "deployed": true,
+  "accounts": {
+    "contract": {
+      "accountId": "styx-contract-1effc31636.testnet",
+      "created": true
+    },
+    "agent": {
+      "accountId": "styx-agent-1effc31636.testnet",
+      "created": true
+    },
+    "verifier": {
+      "accountId": "styx-verifier-1effc31636.testnet",
+      "created": true
+    },
+    "provider": {
+      "accountId": "styx-provider-1effc31636.testnet",
+      "created": true
+    }
+  },
+  "transactions": [
+    {
+      "action": "deploy-and-initialize",
+      "hash": "BnvT9G7kYa2aoi2bUaXCMSZ2Hywy9Tdk3swddDS1toKX"
+    },
+    {
+      "action": "restrict-agent",
+      "hash": "HHbzh4ZcUEx4cW5Xxt1GGddsqwq82bcwvyn3m8Q9Ta31"
+    },
+    {
+      "action": "restrict-verifier",
+      "hash": "8WDhcVA2u1jX7S68DkB54jhNtGMaj5aSxJczRGbuk1uT"
+    },
+    {
+      "action": "restrict-provider",
+      "hash": "ocpB8yWvvmR3zsWuo5EZs4Go2hd8fJqjLz9EbogUcve"
+    }
+  ]
+}

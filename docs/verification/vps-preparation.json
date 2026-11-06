@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-05T15:19:01.642Z",
+  "publicLaunch": false,
+  "architecture": "arm64",
+  "os": "Ubuntu 24.04",
+  "node": "v24.22.2",
+  "archiveSha256": "89e27a14d34fae333801e633749431d9dc50d16f927124b8119ee67d3a98b778",
+  "image": "styx:89e27a14",
+  "codeBuildPassed": true,
+  "composeValidated": true,
+  "isolatedSmoke": {
+    "passed": true,
+    "checks": [
+      "production-page",
+      "anonymous-private-api-denied",
+      "owner-login",
+      "secure-cookie",
+      "authenticated-data",
+      "session-survives-app-restart"
+    ],
+    "externalNetwork": false,
+    "hostDataMounted": false
+  },
+  "janusStatus": 200,
+  "privateCredentialsTransferred": false,
+  "privateDatabaseTransferred": false,
+  "proxyChanged": false,
+  "dnsChanged": false,
+  "pending": [
+    "separate STYX domain",
+    "secure owner provisioning",
+    "final database and restricted configuration cutover",
+    "public HTTPS and owner-wallet origin checks"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "profile": "public",
+  "configuration": "needs_setup",
+  "launchStatus": "unverified",
+  "checks": [
+    {
+      "id": "node",
+      "status": "pass",
+      "message": "Node 24 or later is required."
+    },
+    {
+      "id": "build",
+      "status": "pass",
+      "message": "Production frontend build must exist."
+    },
+    {
+      "id": "access",
+      "status": "fail",
+      "message": "Public operation requires password mode and an exact public HTTPS origin."
+    },
+    {
+      "id": "listener",
+      "status": "pass",
+      "message": "Keep the Node listener on 127.0.0.1 behind the reverse proxy."
+    },
+    {
+      "id": "execution-mode",
+      "status": "pass",
+      "message": "Financial execution mode must remain local; live testnet uses its separate console."
+    },
+    {
+      "id": "database",
+      "status": "pass",
+      "message": "An existing schema-v3 database must pass integrity and foreign-key checks; this command never seeds or migrates it."
+    },
+    {
+      "id": "owners",
+      "status": "fail",
+      "message": "Every workspace needs at least one enabled owner account."
+    },
+    {
+      "id": "backup",
+      "status": "pass",
+      "message": "Supply --backup with a separate valid snapshot modified within the last 7 days. This does not prove off-device storage or recovery."
+    },
+    {
+      "id": "cloud-backup",
+      "status": "disabled",
+      "message": "Backblaze backups are disabled; local snapshots remain available."
+    },
+    {
+      "id": "model",
+      "status": "pass",
+      "message": "Enabled live AI requires a nonempty key and model. Credentials and live inference are not verified."
+    },
+    {
+      "id": "testnet-config",
+      "status": "pass",
+      "message": "Configured testnet requires a contract/hash, distinct role keys and explicit provider prices. No RPC or signing request is made. "
+    },
+    {
+      "id": "testnet-artifact",
+      "status": "pass",
+      "message": "Configured code hash must match the local WASM. Matching bytes do not prove review, deployment or chain state."
+    }
+  ],
+  "manualGates": [
+    "Verify public TLS/proxy, login/logout and desktop/mobile routes at the actual origin.",
+    "Verify off-device backup storage, restore rehearsal, service restart and monitoring alerts.",
+    "Before funded NEAR use: SDK/WASM VM tests, gas/storage measurements, contract review and live wallet/testnet validation.",
+    "Before live AI use: verify model extraction, external sharing consent, costs and failure handling."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checkedAt": "2026-11-05T15:00:26.509Z",
+  "network": "testnet",
+  "contractId": "styx-contract-bf76f42ba5.testnet",
+  "checks": [
+    {
+      "kind": "payment",
+      "executionId": "STX-1083:near:521d481c-57a5-4d5e-a38c-c741c45c367b",
+      "state": "Paid",
+      "transaction": "C6YDJehSFfu1P1nFpL8EL1H3LX9hbS3mkGteXA57G2uG",
+      "finalExecutionStatus": "FINAL",
+      "receiptFailures": 0,
+      "blockHeight": 276356627,
+      "recipient": "styx-parselab-bf76f42ba5.testnet",
+      "amount": "12000000000000000000000"
+    },
+    {
+      "kind": "reservation-release",
+      "executionId": "STX-1084:near:5f9086ac-6841-465f-85ab-db3d5573680c",
+      "state": "Refunded",
+      "transaction": "ARcXLW2RA5NDnQVKidWjP3WEdo5VgUjKsEzthcUpqNoE",
+      "finalExecutionStatus": "FINAL",
+      "receiptFailures": 0,
+      "blockHeight": 276356628,
+      "recipient": "styx-parselab-bf76f42ba5.testnet",
+      "amount": "12000000000000000000000"
+    }
+  ]
+}

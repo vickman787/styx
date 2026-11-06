@@ -1,0 +1,795 @@
+{
+  "passed": true,
+  "variant": "keyed storage fresh-deployment candidate",
+  "checkedAt": "2026-11-03T06:28:42.927Z",
+  "codeHash": "Fvxj2r1j4k9fJXpPzVDGUoeRQ8SNZWHfsfbJ1Dsf6fZW",
+  "runtime": {
+    "build": "8bdca22",
+    "commit": "8bdca22ff9d568eac29bf6c3da031f33eefecece",
+    "rustc_version": "1.95.0",
+    "version": "trunk"
+  },
+  "network": "isolated local sandbox",
+  "contract": "scale-contract-mvzknmhh.test.near",
+  "measurements": [
+    {
+      "jobs": 1,
+      "storageAfterApproval": 469848,
+      "storageAfterPayment": 470488,
+      "approvalReceiptGas": "2786645704521",
+      "releaseReceiptGas": "6885051563973",
+      "paidCallbackGas": "2729422386238",
+      "storageCredit": "4983400000000000000000000"
+    },
+    {
+      "jobs": 10,
+      "storageAfterApproval": 476285,
+      "storageAfterPayment": 476929,
+      "approvalReceiptGas": "2791698315718",
+      "releaseReceiptGas": "6895284092678",
+      "paidCallbackGas": "2734466520453",
+      "storageCredit": "4918990000000000000000000"
+    },
+    {
+      "jobs": 25,
+      "storageAfterApproval": 486604,
+      "storageAfterPayment": 487248,
+      "approvalReceiptGas": "2803104897766",
+      "releaseReceiptGas": "6913524092678",
+      "paidCallbackGas": "2743586520453",
+      "storageCredit": "4815800000000000000000000"
+    },
+    {
+      "jobs": 50,
+      "storageAfterApproval": 503373,
+      "storageAfterPayment": 504017,
+      "approvalReceiptGas": "2798584390054",
+      "releaseReceiptGas": "6904404092678",
+      "paidCallbackGas": "2739026520453",
+      "storageCredit": "4648110000000000000000000"
+    },
+    {
+      "jobs": 100,
+      "storageAfterApproval": 536268,
+      "storageAfterPayment": 536916,
+      "approvalReceiptGas": "2794411688483",
+      "releaseReceiptGas": "6896813758675",
+      "paidCallbackGas": "2735256719900",
+      "storageCredit": "4319120000000000000000000"
+    }
+  ],
+  "transactions": [
+    {
+      "action": "fund",
+      "jobs": 0,
+      "hash": "DufFjJS7qMGzidUUzuvsEaZVNUjoY1T8hdLzjcmeF4Y7",
+      "receiptGas": "2717610364004"
+    },
+    {
+      "action": "approve",
+      "jobs": 1,
+      "hash": "5TQpFgV82CKtYT778Cbyhr73ru6CdxLs2z2KrjaL9kFU",
+      "receiptGas": "2786645704521"
+    },
+    {
+      "action": "reserve",
+      "jobs": 1,
+      "hash": "264NCg4rkbRR4eNxEvx7hRxhb9rzgybSqfXZqDDL7s1x",
+      "receiptGas": "3105314525569"
+    },
+    {
+      "action": "deliver",
+      "jobs": 1,
+      "hash": "FXjbrwM2SkUHQRnGKVsRUejy8WPXq7P8N6yKRwVryAjJ",
+      "receiptGas": "2711317733359"
+    },
+    {
+      "action": "attest",
+      "jobs": 1,
+      "hash": "GrFHJfaLFWZkMmpDyhTN7dvkAkJ52cwwhCCY5ndrMAFf",
+      "receiptGas": "2795902077185"
+    },
+    {
+      "action": "release",
+      "jobs": 1,
+      "hash": "EhQC9DnS4vgvjrwok3mbCBP3S93oxJsTxaXNJ3VNWq2V",
+      "receiptGas": "6885051563973",
+      "paidCallbackGas": "2729422386238"
+    },
+    {
+      "action": "approve",
+      "jobs": 2,
+      "hash": "9DnEsrgG51LUvZWZBFHymM9RHMP6ogMnjRwy8kxoBgSP",
+      "receiptGas": "2791225450665"
+    },
+    {
+      "action": "approve",
+      "jobs": 3,
+      "hash": "ECNT9QBCrQAM3BepgbR2dvPPResm7KnK6xiphN9NT1PB",
+      "receiptGas": "2793492286569"
+    },
+    {
+      "action": "approve",
+      "jobs": 4,
+      "hash": "AxcFQDMPRKnQcnDkgnMhfgcydoQgVgUkEsNUnG1Ge4uQ",
+      "receiptGas": "2793479122473"
+    },
+    {
+      "action": "approve",
+      "jobs": 5,
+      "hash": "JCgrEVRZi1qm5yze16BqoqiC9ok8i9yujpYK5Yxoi16g",
+      "receiptGas": "2793492286569"
+    },
+    {
+      "action": "approve",
+      "jobs": 6,
+      "hash": "CdWChRWS7SK7Duf17rF2aES6skZ299pZQRn2XzPnUbj8",
+      "receiptGas": "2793525196809"
+    },
+    {
+      "action": "approve",
+      "jobs": 7,
+      "hash": "49MNyVJ2nwmTgtShQJ83uRBQGmr3MjEhAGrFr5UKUsDe",
+      "receiptGas": "2793465958377"
+    },
+    {
+      "action": "approve",
+      "jobs": 8,
+      "hash": "5vmGRLQBpBMvwmyBF28KLQ3f3RiKneRCA8bQvfxkLTTV",
+      "receiptGas": "2793472540425"
+    },
+    {
+      "action": "approve",
+      "jobs": 9,
+      "hash": "DxA96T99sLh5eHgBagaeJDCsiV1uo2abeukewu1yLRwu",
+      "receiptGas": "2793512032713"
+    },
+    {
+      "action": "approve",
+      "jobs": 10,
+      "hash": "G14FZ6iLFuy3xvFhYjNumgxZB5D4BzG9W92NUF7SQRUq",
+      "receiptGas": "2791698315718"
+    },
+    {
+      "action": "reserve",
+      "jobs": 10,
+      "hash": "B6VNQvJQPTSXG3GNC5gdmbL9hXBNieLqnWWXXcerP51K",
+      "receiptGas": "3112745306220"
+    },
+    {
+      "action": "deliver",
+      "jobs": 10,
+      "hash": "GVsWeCjiizjdhsCx5FnEg1BByN2VCd91TU54dvfLt9FT",
+      "receiptGas": "2716464836785"
+    },
+    {
+      "action": "attest",
+      "jobs": 10,
+      "hash": "8vy1uN4kovjRqG8BJJzkTjEWbccGksxfSgvtqq3H1PDJ",
+      "receiptGas": "2801345758623"
+    },
+    {
+      "action": "release",
+      "jobs": 10,
+      "hash": "jJAm7JDHBubdTSFZot5sjYeq42vM1dg47RL6948v2Jb",
+      "receiptGas": "6895284092678",
+      "paidCallbackGas": "2734466520453"
+    },
+    {
+      "action": "approve",
+      "jobs": 11,
+      "hash": "8q8KRkGXS3XJ8DRarPCyse3KazSsrEKc2TiLdx8U5UTa",
+      "receiptGas": "2796317554150"
+    },
+    {
+      "action": "approve",
+      "jobs": 12,
+      "hash": "Ggd1Cai9qFxZvbN4iVXAVe9iscJDNQ6MQE6QmxYuwyCe",
+      "receiptGas": "2798564643910"
+    },
+    {
+      "action": "approve",
+      "jobs": 13,
+      "hash": "8MhJFWYcR5dketk8Kcy3DR8gCqzt4CtXghtncE1kQpsH",
+      "receiptGas": "2798604136198"
+    },
+    {
+      "action": "approve",
+      "jobs": 14,
+      "hash": "782ZaSyngttJMaPoUTwEog71EQyS1RCWiJk3z8wTwzhZ",
+      "receiptGas": "2798577808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 15,
+      "hash": "39VMEYuKDoB4wN65pK5hyGRBETbqbTth2BA3sigZZPBN",
+      "receiptGas": "2798597554150"
+    },
+    {
+      "action": "approve",
+      "jobs": 16,
+      "hash": "4zsCRPjPbvfhP8KeiervvtSY98Py2xX9WHY4i7aDS8bR",
+      "receiptGas": "2798571225958"
+    },
+    {
+      "action": "approve",
+      "jobs": 17,
+      "hash": "J4Xpm8hFUhbiYVQG3eHWb5VjsrE8JjEkZPKRqVXM3Caj",
+      "receiptGas": "2798531733670"
+    },
+    {
+      "action": "approve",
+      "jobs": 18,
+      "hash": "383z4iy7wZeHsTZW1y2u9NaTPyopyi2hPcNeSZh83CsU",
+      "receiptGas": "2798590972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 19,
+      "hash": "CKFXfcCwmmQPR5bqVHzCSwJ4ZhqerMbWAepePVqS1Y1X",
+      "receiptGas": "2798637046438"
+    },
+    {
+      "action": "approve",
+      "jobs": 20,
+      "hash": "aByBghwK469BHozNc5gBSVnfNB5ECwsUFNxzi6sF1qF",
+      "receiptGas": "2796238569574"
+    },
+    {
+      "action": "approve",
+      "jobs": 21,
+      "hash": "9YefbWqZiBBNm1TueEctoka4sAGvck7h1quqxdLkyugq",
+      "receiptGas": "2800851225958"
+    },
+    {
+      "action": "approve",
+      "jobs": 22,
+      "hash": "6HcKnTVxL1K7RNj9mVd31jsC2PeMgS8WAM6n2AHW1zSH",
+      "receiptGas": "2803085151622"
+    },
+    {
+      "action": "approve",
+      "jobs": 23,
+      "hash": "E71i4F6RvhuPwHtzzKSNEEHNwbFuzNthPngGFeFt6N3Q",
+      "receiptGas": "2803111479814"
+    },
+    {
+      "action": "approve",
+      "jobs": 24,
+      "hash": "5HABRhrzsrrJtf9sq5NiYRxt7iHjBqWTPTrn9PrMbpuC",
+      "receiptGas": "2803144390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 25,
+      "hash": "BR7pyASgVWMncoieLXhowKMMkZENLw9qWZdkBEYCk1g3",
+      "receiptGas": "2803104897766"
+    },
+    {
+      "action": "reserve",
+      "jobs": 25,
+      "hash": "bPpsAqrJds64D4WYf7p98Gitgee7KM6gHhnrZ2V2Jcf",
+      "receiptGas": "3126425306220"
+    },
+    {
+      "action": "deliver",
+      "jobs": 25,
+      "hash": "EvxwsL5VVd5WaKwZnc2Afa77shgRSXwKbVRTRYb6uGcC",
+      "receiptGas": "2725584836785"
+    },
+    {
+      "action": "attest",
+      "jobs": 25,
+      "hash": "BUene1jHYzXD3XoMZNnCJEtkYP1bvFi2okDRGAECckQi",
+      "receiptGas": "2810465758623"
+    },
+    {
+      "action": "release",
+      "jobs": 25,
+      "hash": "EL8S1gwAPwJwCfHjWeREWCcZvVCCyzrXvTzL3AugYKbZ",
+      "receiptGas": "6913524092678",
+      "paidCallbackGas": "2743586520453"
+    },
+    {
+      "action": "approve",
+      "jobs": 26,
+      "hash": "CKCPQVxVhR84JzfdUcXDNPT3HeuPRiqpyHS4son6yVkM",
+      "receiptGas": "2803157554150"
+    },
+    {
+      "action": "approve",
+      "jobs": 27,
+      "hash": "3EgbhKKWyfHfbEiVdSe88ByDFX3C3ba1ep8nRGSztNPw",
+      "receiptGas": "2803098315718"
+    },
+    {
+      "action": "approve",
+      "jobs": 28,
+      "hash": "Dgzuj45gvLEbvL66LjcRuetZFwGP9CiouaiAJogePV8k",
+      "receiptGas": "2803144390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 29,
+      "hash": "E45yKKbKeLgX6dj5ikyP8y4RV5fXRYxhFHbhtRCNjzX9",
+      "receiptGas": "2803164136198"
+    },
+    {
+      "action": "approve",
+      "jobs": 30,
+      "hash": "5o5fk7v2M3w3LGt7DpS7arKGMMEsv8eWtAjmk3ew2Xq4",
+      "receiptGas": "2798531733670"
+    },
+    {
+      "action": "approve",
+      "jobs": 31,
+      "hash": "6rioYKejVaiDgp4s4uQ3ebxfpaevMPpMxUq9dygHtbdC",
+      "receiptGas": "2800838061862"
+    },
+    {
+      "action": "approve",
+      "jobs": 32,
+      "hash": "CNn79siVfsnG1yC47i9mP6qTKFDee3gRwAUL4t4i5uzK",
+      "receiptGas": "2803098315718"
+    },
+    {
+      "action": "approve",
+      "jobs": 33,
+      "hash": "B8HqnFkr4XAKuWFHwfueAhGerDUQfs2uXRJEkb5k428z",
+      "receiptGas": "2803150972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 34,
+      "hash": "APrfYxRgTtHD5X6nirdMRs2fzxhTFsm6a8ShsiG7QuUv",
+      "receiptGas": "2803137808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 35,
+      "hash": "uVdVbSbpHuzWkWFSQ385xFZ5Ggmpn6sRVy39Jp44iV2",
+      "receiptGas": "2803177300294"
+    },
+    {
+      "action": "approve",
+      "jobs": 36,
+      "hash": "G7eCGibYdCjaytweeHaidApftD2uMRqtwJ6GEXD6ENQ7",
+      "receiptGas": "2803144390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 37,
+      "hash": "73upZvW8umxcvDJJFiKWWog1K3E5rVScHA2rTx4XoJgR",
+      "receiptGas": "2803164136198"
+    },
+    {
+      "action": "approve",
+      "jobs": 38,
+      "hash": "BDxLaBNvJmsRBNuMwVGh73nfiy5KtwAWVvAreaYj2u1P",
+      "receiptGas": "2803150972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 39,
+      "hash": "HVSvRk18udN5qD4rz8ZQtzXn9k7iMzVfDe8ppVPAWofP",
+      "receiptGas": "2803150972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 40,
+      "hash": "7gzBKpMo5SEQs4XpfiP859C7Kytk7UznTUvinso4tAp4",
+      "receiptGas": "2798590972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 41,
+      "hash": "GtPSNHry54XyiVxdQUzYJ9yF1danGbtbqJtYj6ZumSzt",
+      "receiptGas": "2800824897766"
+    },
+    {
+      "action": "approve",
+      "jobs": 42,
+      "hash": "CNgqcdGg1jNLjX1vgGzYtQyhA6E75dzHa3RN3amFXnkZ",
+      "receiptGas": "2803118061862"
+    },
+    {
+      "action": "approve",
+      "jobs": 43,
+      "hash": "HsvQ5knESWp1rfhQ5PELbuv5NVUYD6j862mQMWztRSKx",
+      "receiptGas": "2803104897766"
+    },
+    {
+      "action": "approve",
+      "jobs": 44,
+      "hash": "B32n3aAgbnUnLY1hehdu1G3LQHx48SwNYr9mTfHKCwYr",
+      "receiptGas": "2803150972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 45,
+      "hash": "AU7uoUcUudmqf5aJxZbuhhNLCbnzD56WpA8eJ4CoDn7V",
+      "receiptGas": "2803124643910"
+    },
+    {
+      "action": "approve",
+      "jobs": 46,
+      "hash": "8g81uFvAZw7kBf3y8fZ8HLnAR13wSoKMgCh79f48VRH5",
+      "receiptGas": "2803150972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 47,
+      "hash": "8uGB39rB7JU25kjQSCza8AEhPezYvY5PLbevy6JpgZKp",
+      "receiptGas": "2803137808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 48,
+      "hash": "319Q5KJneKWjTxi5DnbKevAKNXtyU2bNbDEgysE2Wc2s",
+      "receiptGas": "2803111479814"
+    },
+    {
+      "action": "approve",
+      "jobs": 49,
+      "hash": "AZkCFxubj1ez577kt1Ke5xsJK7q2sTbXLpXZxUgTzSno",
+      "receiptGas": "2803157554150"
+    },
+    {
+      "action": "approve",
+      "jobs": 50,
+      "hash": "FrjmuHjmM2UfM6nMta3vpQXXJgnMiuYuWR1zXUzhEEce",
+      "receiptGas": "2798584390054"
+    },
+    {
+      "action": "reserve",
+      "jobs": 50,
+      "hash": "9ZtSAMuj8jwt1Zu4hjA38gsaTaqj6Ypc4ugxyD9N7s7V",
+      "receiptGas": "3124145306220"
+    },
+    {
+      "action": "deliver",
+      "jobs": 50,
+      "hash": "AfD38WuGdhpGv8yjiT6zTJYCV4jRDmdNVVCUCXqQ8k9m",
+      "receiptGas": "2721024836785"
+    },
+    {
+      "action": "attest",
+      "jobs": 50,
+      "hash": "J6nEZ4FgkoHrzH61EzV2VpXsiRzfFmT4qyUrheDVcjfm",
+      "receiptGas": "2805905758623"
+    },
+    {
+      "action": "release",
+      "jobs": 50,
+      "hash": "MJyvh5MaFNjAMZsn9GvTQXLhDsczCB49uRGWy95LM1L",
+      "receiptGas": "6904404092678",
+      "paidCallbackGas": "2739026520453"
+    },
+    {
+      "action": "approve",
+      "jobs": 51,
+      "hash": "6F3mixRrmXQgH9XeVUdsZS8hCRq32Z7opY4ULVCTq1w1",
+      "receiptGas": "2800884136198"
+    },
+    {
+      "action": "approve",
+      "jobs": 52,
+      "hash": "7JLT86anwhLT9QrWkWkmVZUhAz9o7GvKzrWX5Hydfncb",
+      "receiptGas": "2803118061862"
+    },
+    {
+      "action": "approve",
+      "jobs": 53,
+      "hash": "DUvmEz9oFyBPshmi9uKTwSHTncjYzhbZNhA7CUpND9FA",
+      "receiptGas": "2803150972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 54,
+      "hash": "G3inq8vFcGEWaKzCJBd9Ao43KHEDDCq5qfWcZqTs1E22",
+      "receiptGas": "2803157554150"
+    },
+    {
+      "action": "approve",
+      "jobs": 55,
+      "hash": "BeFnE9EoxYJa1acQEJ1MR1jfEnx6BAZvy1dqJDbPkHrR",
+      "receiptGas": "2803131225958"
+    },
+    {
+      "action": "approve",
+      "jobs": 56,
+      "hash": "CJw6NU2xNXrBL8nzimFXozyZVY2nP5EAgdn7SVD27Emk",
+      "receiptGas": "2803118061862"
+    },
+    {
+      "action": "approve",
+      "jobs": 57,
+      "hash": "6gz9ntDghyqPs5y4mBPWeSKGQGHBaVHR37xX3AnMhf1q",
+      "receiptGas": "2803150972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 58,
+      "hash": "69crGWszi2P2ZqeJELLewrjKFXyfiRd8A5KYRTscvyKK",
+      "receiptGas": "2803144390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 59,
+      "hash": "8QqHPQ7mZQVS6YYTaQZNQoKgWkXv9yuRcTarw3jDHph5",
+      "receiptGas": "2803131225958"
+    },
+    {
+      "action": "approve",
+      "jobs": 60,
+      "hash": "Cr2WzQERnXFXP1Nm2DFbJFFCLTYCRP2vNraZu2jJ94vP",
+      "receiptGas": "2798531733670"
+    },
+    {
+      "action": "approve",
+      "jobs": 61,
+      "hash": "9RHxpBo8rdC6XX9oh3QX21hx4CCmxTBCb4d9DZBqKuY8",
+      "receiptGas": "2800864390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 62,
+      "hash": "8jfKxPDpjze6pykZ2BFVzjQiMA9PF4yjjT5r9D3sPF1d",
+      "receiptGas": "2803065405478"
+    },
+    {
+      "action": "approve",
+      "jobs": 63,
+      "hash": "9gX3tAw3DzVryjTpcnvdcoEgGJAupYQA6XemH8pLbyLU",
+      "receiptGas": "2803144390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 64,
+      "hash": "3dSLkDfMScaU3xEPSLzy5hQhHCu7YGdH8NPdSMRmTsnn",
+      "receiptGas": "2803131225958"
+    },
+    {
+      "action": "approve",
+      "jobs": 65,
+      "hash": "DdjHSgwGy4j3EAZv9f3w79jY3GZR5n879GjKwPyHP289",
+      "receiptGas": "2803137808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 66,
+      "hash": "3qg9mN22gvfxH2wLSbx3xyXMMG3puYixs3GznPrujbco",
+      "receiptGas": "2803104897766"
+    },
+    {
+      "action": "approve",
+      "jobs": 67,
+      "hash": "Fj1uXRqmfwkYPo31g6QBHuT8AkMwr8BMmR75mvPiVbvU",
+      "receiptGas": "2803111479814"
+    },
+    {
+      "action": "approve",
+      "jobs": 68,
+      "hash": "BE3S7YXFaeo4tUgy9XJAwcUEP9yMMPdj5zgjnp429kQU",
+      "receiptGas": "2803137808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 69,
+      "hash": "2tdgPcW7AtTssXKxS2UkQMs52xowdx4hnac9nsRD13dk",
+      "receiptGas": "2803111479814"
+    },
+    {
+      "action": "approve",
+      "jobs": 70,
+      "hash": "9CkqjuPfaKBua57NjK44Ee8E72Z2GtvRXfApMXf5wv5i",
+      "receiptGas": "2798604136198"
+    },
+    {
+      "action": "approve",
+      "jobs": 71,
+      "hash": "2XQ35oo4gP7aaL1pqvGUXLtSY7QadevNvU7dNuza4Kv3",
+      "receiptGas": "2800838061862"
+    },
+    {
+      "action": "approve",
+      "jobs": 72,
+      "hash": "Bd4MJjp6hiedJPTyPRvKAqaUfDh1eNNRFevg7tSE1rxR",
+      "receiptGas": "2803170718246"
+    },
+    {
+      "action": "approve",
+      "jobs": 73,
+      "hash": "5YB4WbGpWPAx7PHtpGZinP6bQpzxGoJ5G9hD7dijZD7H",
+      "receiptGas": "2803131225958"
+    },
+    {
+      "action": "approve",
+      "jobs": 74,
+      "hash": "4asx7GEYiqb6eMSv8QQdQRNSVmPYAckMCvxiR36V6KSR",
+      "receiptGas": "2803111479814"
+    },
+    {
+      "action": "approve",
+      "jobs": 75,
+      "hash": "Dqkds9SZMukGW1BCYRfQCcrZ54wqNg4GGq9aKw9ts5jT",
+      "receiptGas": "2803104897766"
+    },
+    {
+      "action": "approve",
+      "jobs": 76,
+      "hash": "AmAKtUXgRwk8SC2ZNeqD4yGRMcJXHP938CcC44bE8hq6",
+      "receiptGas": "2803137808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 77,
+      "hash": "7Zi3zCWTEFz7Sqs6zhjKFSKKqxQsqmvfZMTkRkfTUcpy",
+      "receiptGas": "2803118061862"
+    },
+    {
+      "action": "approve",
+      "jobs": 78,
+      "hash": "971cWtnUeTDEoPS6jVhMeMayQXstpqwJLPJSfbwM5Pmg",
+      "receiptGas": "2803144390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 79,
+      "hash": "AB34y238siGXVZjqK8aLARABE6otMDzwapwUUKerXxmh",
+      "receiptGas": "2803137808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 80,
+      "hash": "8yyZWfQYVt6JW7piwdqGrcvVwt5mCXd85o9H85hPZXqg",
+      "receiptGas": "2798584390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 81,
+      "hash": "GChRrPvB9En5Qaa1V6iR73pLvUmXr4uMZen4FSQRvnt9",
+      "receiptGas": "2800857808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 82,
+      "hash": "FmwaxdcmtRGjtLkf9KCsxc8srQ8ELvPZgT9fAeyGsQGi",
+      "receiptGas": "2803137808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 83,
+      "hash": "BY2r24U4wGcgG2bHzAjvX4njXzp7w7ZHENXKRgxzpLor",
+      "receiptGas": "2803144390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 84,
+      "hash": "2Q5TS3KFHeNQHRCVfd7XiE9aMdwN6iWWSnwNZFYGHXFa",
+      "receiptGas": "2803131225958"
+    },
+    {
+      "action": "approve",
+      "jobs": 85,
+      "hash": "389g1fk6K3xd7RTKSZrAjhMyunnqwC7rL5qpMXwbxFrd",
+      "receiptGas": "2803124643910"
+    },
+    {
+      "action": "approve",
+      "jobs": 86,
+      "hash": "D2Dep3fH13jvKiJqYPFzXj43mppASzAvdKYjcPEmsCKP",
+      "receiptGas": "2803124643910"
+    },
+    {
+      "action": "approve",
+      "jobs": 87,
+      "hash": "D5keHBA2mNtu9RrJhwntU4UUEqrz3Sy3s17PU7DK4Q5T",
+      "receiptGas": "2803144390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 88,
+      "hash": "GqLriGdchtWtbFAKJSKoxzx8i1mS4SRvfGttWfxCzoqq",
+      "receiptGas": "2803137808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 89,
+      "hash": "Ge6aP4o3rgEhMWPZdoxKFNuRFdbqz6iotBzr8aR6n3FY",
+      "receiptGas": "2803137808006"
+    },
+    {
+      "action": "approve",
+      "jobs": 90,
+      "hash": "66FeDcYgLQdHbFf8U2SThgg6s1KNJcDiE4NWQQhdbXHa",
+      "receiptGas": "2798558061862"
+    },
+    {
+      "action": "approve",
+      "jobs": 91,
+      "hash": "CFzqNzkKGkUhbWKkKEeuo6Vkcw42ZdSnhe2zmrasFu3g",
+      "receiptGas": "2800870972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 92,
+      "hash": "Db3Wovh9CU3Z6mMm5T2ueKuQBF3qi8QsWKczCKpm3JqJ",
+      "receiptGas": "2803124643910"
+    },
+    {
+      "action": "approve",
+      "jobs": 93,
+      "hash": "Gkfg796J7FnHkzLGuDdbrSuN8M2qRsPGW4Wq77CGHkSa",
+      "receiptGas": "2803144390054"
+    },
+    {
+      "action": "approve",
+      "jobs": 94,
+      "hash": "4L3gE4Pdfvn7roeaLWZPcSvFJQkTv8BBc2gArKVAD77H",
+      "receiptGas": "2803098315718"
+    },
+    {
+      "action": "approve",
+      "jobs": 95,
+      "hash": "3EZR7CABhdrSWgExDNrpdBkENYoPXDJBGqjpnGBPX5wT",
+      "receiptGas": "2803177300294"
+    },
+    {
+      "action": "approve",
+      "jobs": 96,
+      "hash": "77LVoPgbM7DnHfFc8fP8tG25H3BKAVmrr1m5buPTHrxr",
+      "receiptGas": "2803124643910"
+    },
+    {
+      "action": "approve",
+      "jobs": 97,
+      "hash": "5qACTBHxMopUYyp98bGJsXj7RBpv5XMCVTRCY7MypZ2",
+      "receiptGas": "2803164136198"
+    },
+    {
+      "action": "approve",
+      "jobs": 98,
+      "hash": "8VfWtE6kwWvskPkiLYGHACRAgWGReDbAsBDG6pY6GysA",
+      "receiptGas": "2803150972102"
+    },
+    {
+      "action": "approve",
+      "jobs": 99,
+      "hash": "9prTN9nHejBAq72CL8AdmkGPvZUr8K37wxTWJqGuFJq8",
+      "receiptGas": "2803104897766"
+    },
+    {
+      "action": "approve",
+      "jobs": 100,
+      "hash": "3yfhy6UPnN989HcQAfJL6MqGQPQRTnvxqh3SUcqeHawe",
+      "receiptGas": "2794411688483"
+    },
+    {
+      "action": "reserve",
+      "jobs": 100,
+      "hash": "F1g6U7ZX8yUyWeFA2G46hKwMHnZiPm7pb2UFaTbRqSzF",
+      "receiptGas": "3116049679283"
+    },
+    {
+      "action": "deliver",
+      "jobs": 100,
+      "hash": "FAe1RhzkQj9dhCac4N3Hr7shmd8fsLuHWxhWtuSkxMeP",
+      "receiptGas": "2716935108859"
+    },
+    {
+      "action": "attest",
+      "jobs": 100,
+      "hash": "7ifthw8fbNGBvgABc5ubkqw1ixAinjQjCUi9nMn5rwTz",
+      "receiptGas": "2801683130077"
+    },
+    {
+      "action": "release",
+      "jobs": 100,
+      "hash": "4kDTRx5ReWzTbY42pwT3vuDzbPmofBaXS8j5bgCW9g87",
+      "receiptGas": "6896813758675",
+      "paidCallbackGas": "2735256719900"
+    }
+  ],
+  "limits": "Bounded benchmark through 100 job records, five full payment callbacks, one owner. Not a maximum-capacity guarantee, independent audit, multi-owner benchmark or production throughput test."
+}

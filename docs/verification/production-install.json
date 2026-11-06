@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checkedAt": "2026-11-03T06:44:34.253Z",
+  "install": "clean offline npm ci --omit=dev --ignore-scripts",
+  "productionRuntime": true,
+  "developmentDependenciesOmitted": true,
+  "privateConfigurationCopied": false,
+  "liveDatabaseUsed": false,
+  "externalIntegrations": "disabled",
+  "appStatus": 200,
+  "compiledAssetsChecked": 2,
+  "anonymousPrivateApiStatus": 401,
+  "publicHosting": "not tested"
+}

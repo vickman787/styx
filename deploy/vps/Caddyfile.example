@@ -1,0 +1,6 @@
+# Replace the whole hostname with the chosen STYX domain before validation.
+styx.example.invalid {
+    encode zstd gzip
+    # Existing Caddy container must join styx_private with this alias reachable.
+    reverse_proxy styx-app:4173
+}
