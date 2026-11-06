@@ -104,14 +104,14 @@ export default function LandingPage() {
                 <Link className="lp-button" to="/testnet#upload">
                   Upload invoices <ArrowRight size={18} />
                 </Link>
-                <a className="lp-secondary-link" href="#controls">
-                  Built around your rules <ArrowUpRight size={15} />
-                </a>
+                <Link className="lp-secondary-link" to="/try-demo">
+                  Try sample demo <ArrowUpRight size={15} />
+                </Link>
               </div>
               <div className="lp-hero-note">
                 <span className="lp-tiny-dot" />
-                Local demo available<span className="lp-note-separator">/</span>
-                No wallet needed
+                NEAR testnet pilot<span className="lp-note-separator">/</span>
+                Sample demo needs no wallet
               </div>
             </div>
             <div
@@ -444,8 +444,9 @@ export default function LandingPage() {
               BUILT TO BE INSPECTED
             </span>
             <p>
-              The current release runs locally with demo units. NEAR testnet
-              settlement and live inference are still in development.
+              NEAR testnet settlement is live. The separate sample demo uses
+              fictional invoices and simulated payments. Optional NEAR AI
+              processing requires explicit consent and separate API credits.
             </p>
           </div>
         </div>

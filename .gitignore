@@ -25,3 +25,4 @@ docs/screenshots/*
 !docs/screenshots/paid-agreement.png
 !docs/screenshots/testnet-receipt.png
 docs/README-before-publication.md
+!docs/screenshots/sample-demo.png

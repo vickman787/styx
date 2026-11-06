@@ -305,6 +305,17 @@ export default function App() {
         )}
       </main>
     );
+  const currentJobId = location.pathname.match(/^\/jobs\/([^/]+)/)?.[1];
+  const currentJob = data.jobs.find((job) => job.id === currentJobId);
+  const chainPage = ["/app", "/testnet", "/providers"].includes(
+    location.pathname,
+  );
+  const pageMode = chainPage
+    ? "NEAR testnet"
+    : ["/demo", "/testing"].includes(location.pathname) ||
+        (currentJob && !currentJob.sourceOnly)
+      ? "Local demo · simulated payments"
+      : "Workspace · invoice evidence";
   const nav = [
     { to: "/app", label: "Overview", icon: LayoutDashboard },
     {
@@ -370,7 +381,11 @@ export default function App() {
             </span>
             <span>
               {data.workspace.name}
-              <small>Local workspace</small>
+              <small>
+                {data.auth?.authMode === "password"
+                  ? "Protected workspace"
+                  : "Local workspace"}
+              </small>
             </span>
           </div>
         </div>
@@ -409,9 +424,9 @@ export default function App() {
           <div className="toolbar-right">
             <span className="mode">
               <i />
-              NEAR testnet
+              {pageMode}
             </span>
-            <WalletControl request={api} />
+            {chainPage && <WalletControl request={api} />}
           </div>
         </header>
         <main id="main" tabIndex={-1}>
@@ -2011,13 +2026,18 @@ function Detail() {
   const { job: j, act, data } = useJob();
   const nav = useNavigate();
   if (!j) return <Missing />;
-  const deliveredAt = j.transitions.findLast((t) => t.state === "delivered")?.at;
+  const deliveredAt = j.transitions.findLast(
+    (t) => t.state === "delivered",
+  )?.at;
   const startedAt = j.transitions.findLast(
-    (t) => t.state === "running" && deliveredAt !== undefined && t.at <= deliveredAt,
+    (t) =>
+      t.state === "running" && deliveredAt !== undefined && t.at <= deliveredAt,
   )?.at;
   const processingSeconds =
-    deliveredAt !== undefined && startedAt !== undefined &&
-    Number.isFinite(deliveredAt) && Number.isFinite(startedAt)
+    deliveredAt !== undefined &&
+    startedAt !== undefined &&
+    Number.isFinite(deliveredAt) &&
+    Number.isFinite(startedAt)
       ? ((deliveredAt - startedAt) / 1000).toFixed(2)
       : null;
   return (
@@ -2063,7 +2083,8 @@ function Detail() {
                   <strong>october-invoices.csv</strong>
                   <small>{j.artifact.rows.length} records · CSV delivery</small>
                   <small>
-                    Processing duration: {processingSeconds === null
+                    Processing duration:{" "}
+                    {processingSeconds === null
                       ? "Not recorded for this saved delivery"
                       : `${processingSeconds}s measured`}
                   </small>

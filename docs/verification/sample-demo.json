@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-06T08:51:46.600419+00:00",
+  "origin": "https://usestyx.xyz",
+  "path": "/try-demo",
+  "image": "styx:sample-demo-20261106",
+  "validation": {
+    "applicationTestsPassed": 108,
+    "sampleBrowserJourneysPassed": 2,
+    "headerAndSavedDeliveryBrowserChecksPassed": 3,
+    "productionBuild": true,
+    "changedFileLint": true,
+    "isolatedDockerSmoke": true,
+    "publicHttpsSampleJourneys": true,
+    "mobileNoHorizontalOverflow": true,
+    "mobileSeriousCriticalAxeViolations": 0,
+    "ownerAnonymousApiStatus": 401,
+    "ownerDatabaseTablesCompared": 20,
+    "ownerTablesWithChangedCounts": 0,
+    "janusHttpsStatus": 200
+  },
+  "limits": {
+    "sessionMinutes": 30,
+    "jobsPerSession": 5,
+    "simultaneousSessions": 24,
+    "newSessionsPer15Minutes": 60,
+    "mutationsPerSession": 150
+  },
+  "boundaries": [
+    "separate in-memory database per guest",
+    "separate scoped HttpOnly cookie",
+    "synthetic server fixtures only",
+    "empty model environment",
+    "no NEAR, AI, upload or owner-auth endpoints",
+    "exact origin, host and CSRF checks"
+  ],
+  "limitations": [
+    "Temporary process-local demo; restart clears guest sessions.",
+    "Capacity limits can show a busy response.",
+    "Real testnet links refer to separate earlier owner agreements."
+  ]
+}

@@ -32,3 +32,12 @@ Updated 3 November 2026. The contract is live on NEAR testnet and localhost now 
 | GitHub, Vercel, live persistence migration, domain and public acceptance | LAST; DEFERRED BY USER            | SQLite backend needs deployment-compatible persistence; proposed Neon for relational data. Backblaze backups do not replace the live database.                                                                              |
 
 Application, contract, browser and deployment evidence: [verification](docs/verification/RESULTS.md), [live testnet guide](docs/TESTNET_LIVE.md), [implementation status](IMPLEMENTATION_STATUS.md). Local/mocked checks and real chain checks are identified separately. No mainnet use or independent security audit is claimed.
+
+## Public sample workspace - 6 November 2026
+
+- [x] Isolated temporary visitor demo at `/try-demo`, synthetic inputs and simulated payments only.
+- [x] Correct homepage and shared local/testnet labels; keep owner workspace protected.
+- [x] Public browser success/rejection, mobile accessibility, API isolation and unchanged owner-table counts verified.
+- [x] Reviewed public sample screenshot and README instructions.
+
+See [sample demo](docs/SAMPLE_DEMO.md) and [verification evidence](docs/verification/sample-demo.json).

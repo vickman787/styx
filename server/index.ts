@@ -13,6 +13,7 @@ import { NearService } from "../lib/settlement/near-service.ts";
 import { deliveryReview } from "../lib/verification/review.ts";
 import { hash } from "../lib/domain/policy.ts";
 import { listenerConfig } from "./listener.ts";
+import { createSampleDemo } from "./sample-demo.ts";
 const config = listenerConfig();
 const app = express(),
   rootStore = new Store();
@@ -39,6 +40,8 @@ app.use(
       : undefined,
   ),
 );
+// Separate in-memory sample workspaces; never routed into owner authentication.
+app.use("/api/sample-demo", createSampleDemo(authConfig).router);
 app.use("/api", accessMiddleware(auth, authConfig));
 function workspaceRouter(store: Store) {
   const router = express.Router(),

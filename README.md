@@ -7,7 +7,7 @@
 
 An owner-controlled invoice processing workspace with scoped service roles, independently checked CSV deliveries, and wallet-approved settlement on NEAR testnet.
 
-[Live app](https://usestyx.xyz) · [Quick start](#quick-start) · [Product tour](#product-tour) · [Testnet proof](#real-testnet-proof) · [Architecture](#architecture) · [Documentation](#documentation)
+[Live app](https://usestyx.xyz) · [Try sample demo](https://usestyx.xyz/try-demo) · [Quick start](#quick-start) · [Product tour](#product-tour) · [Testnet proof](#real-testnet-proof) · [Architecture](#architecture) · [Documentation](#documentation)
 
 </div>
 
@@ -37,7 +37,7 @@ The current use case is **structured invoices to accounting CSV**. Upload JSON o
 | Hosting | Ubuntu ARM64 VPS, Docker and Caddy HTTPS; domain/DNS managed by Vercel |
 | Status | Working testnet pilot; independent review and mainnet launch remain ahead |
 
-**The hosted workspace requires sign-in** because it contains private owner records. No public password is distributed. Judges can run a fresh local installation without credentials, a wallet, or paid AI access. The public landing page includes an interactive illustration; that illustration is not payment evidence.
+**The owner workspace requires sign-in** because it contains private owner records. Judges can open [Try sample demo](https://usestyx.xyz/try-demo) without credentials, a wallet, uploads or paid AI. Each visitor receives a separate temporary workspace using fictional invoices and simulated payments. The public landing-page illustration is also a simulation, not payment evidence.
 
 ## Product tour
 
@@ -64,7 +64,13 @@ The matching receipt records **0.012 testnet NEAR** paid to `styx-parselab-bf76f
 
 ![Earlier confirmed NEAR testnet receipt for a 0.012 NEAR ParseLab payout](docs/screenshots/testnet-receipt.png)
 
-**Presentation caveat:** the current homepage retains local-demo wording and an outdated development-status paragraph. Some local pages carry a shared testnet badge. Use the explicit asset labels and reconciled receipt to distinguish local activity from network transfers. Demo units are never converted to NEAR. These labels still need a consistency pass.
+### Try the public sample workspace
+
+Open **[usestyx.xyz/try-demo](https://usestyx.xyz/try-demo)** or choose **Try sample demo** on the homepage. Set a cap, load 30 fictional invoices, approve the rules, compare quotes, review the actual CSV and choose simulated acceptance or reservation release. An arithmetic-failure case demonstrates blocked acceptance.
+
+The banner always identifies simulated payments. Demo units are never converted to NEAR; separate links show earlier real testnet transactions. Sessions last 30 minutes, support five jobs, and are discarded on expiry or server restart. No owner login, wallet, file upload or paid model is available in this mode. [Design and limits](docs/SAMPLE_DEMO.md).
+
+![Actual public sample workspace with fictional invoices, verification and explicitly simulated payment controls](docs/screenshots/sample-demo.png)
 
 ## How it works
 
@@ -242,8 +248,8 @@ Recorded validation includes the application suite, real owner payment and reser
 - **Trusted components:** server, verifier and operator remain in the trust model.
 - **Limited marketplace:** both configured services are STYX-operated.
 - **Explicit recovery:** reconcile interrupted submissions before retrying; an error screen does not prove no transaction was sent.
-- **Private hosted workspace:** an isolated public judge/demo workspace has not been provisioned.
-- **Presentation:** demo/testnet labels need a consistency pass; the narrated submission demo is in preparation.
+- **Private owner workspace:** guest demo sessions have separate in-memory databases and cannot access owner APIs.
+- **Submission media:** the narrated video is in preparation; sample screens label simulated payments and link separately to actual testnet proof.
 - **Further validation:** independent security review, dependency review, broader user testing and operational/load checks remain ahead.
 
 Private databases, environment files, wallet keys, logs, raw recordings and unreviewed historical screenshots are excluded. Only selected reviewed screenshot copies are published. [Design provenance](docs/design/SOURCES.md) records the original Canva logo source.

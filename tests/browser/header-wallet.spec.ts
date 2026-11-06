@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-test("wallet connection is in the header across workspace routes on desktop and mobile", async ({
+test("wallet controls stay on testnet routes and local pages identify simulated payments", async ({
   page,
 }) => {
   test.setTimeout(120000);
@@ -12,9 +12,16 @@ test("wallet connection is in the header across workspace routes on desktop and 
     for (const path of ["/app", "/jobs", "/testing", "/testnet"]) {
       await page.goto(path);
       const header = page.locator("header.toolbar");
-      await expect(
-        header.getByRole("button", { name: "Connect wallet", exact: true }),
-      ).toBeVisible();
+      if (["/app", "/testnet"].includes(path)) {
+        await expect(
+          header.getByRole("button", { name: "Connect wallet", exact: true }),
+        ).toBeVisible();
+      } else {
+        await expect(
+          header.getByRole("button", { name: "Connect wallet", exact: true }),
+        ).toHaveCount(0);
+        await expect(header).not.toContainText("NEAR testnet");
+      }
       await expect(header.getByRole("link", { name: /settings/i })).toHaveCount(
         0,
       );
