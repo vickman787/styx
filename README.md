@@ -7,7 +7,7 @@
 
 An owner-controlled invoice processing workspace with scoped service roles, independently checked CSV deliveries, and wallet-approved settlement on NEAR testnet.
 
-[Live app](https://usestyx.xyz) · [Try sample demo](https://usestyx.xyz/try-demo) · [Quick start](#quick-start) · [Product tour](#product-tour) · [Testnet proof](#real-testnet-proof) · [Architecture](#architecture) · [Documentation](#documentation)
+[Live app](https://usestyx.xyz) · [Try sample demo](https://usestyx.xyz/try-demo) · [Watch demo](https://youtu.be/7t0hImAfEIY) · [Quick start](#quick-start) · [Product tour](#product-tour) · [Testnet proof](#real-testnet-proof) · [Architecture](#architecture) · [Documentation](#documentation)
 
 </div>
 
@@ -20,6 +20,12 @@ STYX connects a specific job to explicit rules: which service can perform it, th
 The current use case is **structured invoices to accounting CSV**. Upload JSON or CSV invoices, choose local parsing or an explicitly authorized NEAR AI request, inspect verification results, then prepare a separately priced NEAR testnet agreement. The owner can accept a verified delivery or release a reservation without paying the provider.
 
 ![STYX public landing page, captured from usestyx.xyz](docs/screenshots/landing.png)
+
+## Watch the demo
+
+[Watch the narrated STYX walkthrough on YouTube](https://youtu.be/7t0hImAfEIY) (2 minutes 30 seconds).
+
+Follow the public sample from spending rules and service quotes to CSV review, simulated acceptance, and rejection of failed work. The blockchain-proof section shows separate, earlier owner-completed NEAR testnet transactions. Sample payments are simulated; they do not send NEAR.
 
 ## At a glance
 
@@ -249,7 +255,7 @@ Recorded validation includes the application suite, real owner payment and reser
 - **Limited marketplace:** both configured services are STYX-operated.
 - **Explicit recovery:** reconcile interrupted submissions before retrying; an error screen does not prove no transaction was sent.
 - **Private owner workspace:** guest demo sessions have separate in-memory databases and cannot access owner APIs.
-- **Submission media:** the narrated video is in preparation; sample screens label simulated payments and link separately to actual testnet proof.
+- **Submission media:** the [narrated video is published on YouTube](https://youtu.be/7t0hImAfEIY); sample screens label simulated payments and link separately to actual testnet proof.
 - **Further validation:** independent security review, dependency review, broader user testing and operational/load checks remain ahead.
 
 Private databases, environment files, wallet keys, logs, raw recordings and unreviewed historical screenshots are excluded. Only selected reviewed screenshot copies are published. [Design provenance](docs/design/SOURCES.md) records the original Canva logo source.
@@ -266,4 +272,4 @@ Private databases, environment files, wallet keys, logs, raw recordings and unre
 
 Prepared for NEAR HACKATHON; recommended tracks are **AI Security & Defense** and **Agent Economy**. STYX demonstrates bounded agent-service spending tied to delivery evidence and owner approval.
 
-Dated evidence includes work before November 1, 2026. Eligibility and treatment of prior work must follow the organizers' rules; STYX does not claim all code was written within the competition window. The demo-post/submission links will be added when they exist.
+Dated evidence includes work before November 1, 2026. Eligibility and treatment of prior work must follow the organizers' rules; STYX does not claim all code was written within the competition window. The [video walkthrough](https://youtu.be/7t0hImAfEIY) is available; the X demo-post and submission links will be added when they exist.
